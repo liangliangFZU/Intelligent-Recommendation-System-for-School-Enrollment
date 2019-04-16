@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/campus"
+            android:title="本专业校招信息"/>
+        <item
+            android:id="@+id/web"
+            android:title="本专业网招信息"/>
+        <item
+            android:id="@+id/more_campus_data"
+            android:title="更多专业校招信息"/>
+        <item
+            android:id="@+id/more_web_data"
+            android:title="更多专业网招信息"/>
+    </group>
+</menu>

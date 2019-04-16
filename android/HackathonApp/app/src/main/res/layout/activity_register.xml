@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/register_pic"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textSize="40dp" />
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/register_name"
+        app:ic_left_unclick="@drawable/ic_name"
+        app:ic_left_click="@drawable/ic_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="  用户名" />
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/register_account"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="  邮箱"
+        android:inputType="textEmailAddress"/>
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/register_password"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:ic_left_click="@drawable/ic_password"
+        app:ic_left_unclick="@drawable/ic_password"
+        android:hint="  密码"
+        android:inputType="textPassword"/>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学院:"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+        <Spinner
+            android:id="@+id/college_opt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专业:"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/major_opt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></Spinner>
+    </LinearLayout>
+
+
+    <com.cengalabs.flatui.views.FlatButton
+        android:id="@+id/register_request_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="注册"/>
+    <Button
+        android:id="@+id/to_login_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="已有账号？登录"/>
+
+</LinearLayout>

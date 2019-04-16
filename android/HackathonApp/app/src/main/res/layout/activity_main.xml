@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/login_pic"
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal" />
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/account"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        app:ic_left_click="@drawable/ic_left_click"
+        app:ic_left_unclick="@drawable/ic_left_unclick"
+        app:left_x="0"
+        app:left_y="0"
+        app:left_width="60"
+        app:left_height="60"
+
+        app:ic_delete="@drawable/ic_delete"
+        app:delete_x="0"
+        app:delete_y="0"
+        app:delete_height="40"
+        app:delete_width="40"
+
+        app:lineColor_click="@color/colorfocus"
+        app:lineColor_unclick="@color/colorDefault"
+        app:linePosition="1"
+
+        app:cursor="@drawable/cursortest"
+
+        android:textSize="20sp"
+        android:textColor="@color/colorfocus"
+        android:inputType="textEmailAddress"
+        android:hint="  用户邮箱"/>
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        app:ic_left_click="@drawable/ic_password"
+        app:ic_left_unclick="@drawable/ic_password"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:hint="  密码"/>
+    <com.cengalabs.flatui.views.FlatButton
+        android:id="@+id/login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="登录"/>
+    <Button
+        android:id="@+id/register_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="注册"/>
+</LinearLayout>
